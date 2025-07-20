@@ -1,6 +1,6 @@
 task = input("Enter your task for today: ")
-time_bound = input("Is the task time-bound? (yes or no): ").lower()
-priority = input("Enter the priority level (high, medium, low): ").lower()
+time_bound = input("Is it time-bound? (yes or no): ").lower()
+priority = input("(high, medium, low): ").lower()
 
 match priority:
     case "high":
@@ -15,4 +15,4 @@ match priority:
 if time_bound == "yes":
     print("This task requires immediate attention due to time sensitivity.")
 else:
-    print("This task can be scheduled flexibly today.")
+    print("Consider completing it when you have free time.")
